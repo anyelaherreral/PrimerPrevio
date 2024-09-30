@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header con título, carrito y botón de salir -->
+    <header>
+        <h1>Productos</h1>
+        <div class="header-buttons">
+            <button id="cartBtn">Carrito</button>
+            <button id="logoutBtn">Salir</button>
+        </div>
+    </header>
+
+    <!-- Filtro de búsqueda -->
+    <h3>Filtro de búsqueda</h3>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Buscar productos...">
+        <button id="search-btn">Buscar</button>
+    </div>
+
+    <!-- Filtros por categoría -->
+    <div class="category-filters">
+        <label><input type="radio" name="category" value="all" checked> Todos</label>
+        <label><input type="radio" name="category" value="electronics"> Electrónica</label>
+        <label><input type="radio" name="category" value="jewelery"> Joyería</label>
+        <label><input type="radio" name="category" value="men's clothing"> Ropa de hombre</label>
+        <label><input type="radio" name="category" value="women's clothing"> Ropa de mujer</label>
+    </div>
+
+    <!-- Contenedor donde se mostrarán los productos -->
+    <div id="product-list"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
