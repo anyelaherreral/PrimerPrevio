@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #888;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.header-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.search-bar, .category-filters {
+    margin: 1rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    width: 300px;
+}
+
+.search-bar button, .category-btn {
+    padding: 1rem 1.5rem;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    margin-bottom: 20px;
+}
+
+.search-bar-container h3 {
+    margin: 30px; /* Eliminar el margen para alinearlo correctamente */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el input y el botón */
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    width: 250px; /* Puedes ajustar el tamaño según necesites */
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.category-filters{
+    justify-content: center;
+    text-align: center;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.product-category {
+    color: #666;
+    font-style: italic;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; */
+    overflow: hidden;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de productos</title>
+    <link rel="stylesheet" href="styleProductos.css">
+</head>
+<body>
+    <!-- Header con título, carrito y botón de salir -->
+    <header>
+        <div class="logo">
+            <h1>Shop Online</h1>
+            <p>Anytime, Anywhere</p>
+        </div>
+        <div class="header-buttons">
+            <button id="cartBtn">Carrito</button>
+            <button id="logoutBtn">Salir</button>
+        </div>
+    </header>
+
+    <!-- Filtro de búsqueda -->
+     <div class="search-bar-container">
+        <h3>Filtro de búsqueda</h3>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar productos...">
+            <button id="search-btn">Buscar</button>
+        </div>
+    </div>
+
+    <!-- Filtros por categoría -->
+    <div class="category-filters">
+        <h3>Productos</h3>
+        <button class="category-btn" data-category="electronics">Electrónica</button>
+        <button class="category-btn" data-category="jewelery">Joyería</button>
+        <button class="category-btn" data-category="men's clothing">Ropa de hombre</button>
+        <button class="category-btn" data-category="women's clothing">Ropa de mujer</button>
+    </div>
+
+    <!-- Contenedor donde se mostrarán los productos -->
+    <div id="product-list"></div>
+
+    <script src="productos.js"></script>
+</body>
+</html>

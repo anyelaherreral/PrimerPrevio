@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Pedido</title>
+    <link rel="stylesheet" href="styleDetallesPedido.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shop Online</h1>
+            <p>Anytime, Anywhere</p>
+        </div>
+        <div class="user-info">
+            <span id="welcomeMessage">Bienvenido: </span>
+            <div class="header-buttons">
+                <!-- <button id="cartBtn">Carrito</button> -->
+                <button id="logoutBtn">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <h2>Detalles del Pedido</h2>
+    <div class="pedido-info">
+        <label for="fecha">Fecha:</label>
+        <input type="text" id="fecha" readonly>
+        
+        <label for="pedidoNumero">Número de Pedido:</label>
+        <input type="text" id="pedidoNumero" readonly>
+        
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" readonly>
+    </div>
+
+    <h3>Relación de Productos</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Valor</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody id="ordersTableBody">
+            <!-- Aquí se llenarán los detalles del pedido -->
+        </tbody>
+    </table>
+
+    <h3>Total: <span id="total"></span></h3>
+
+    <div class="acciones">
+        <button id="actualizarBtn">Actualizar</button>
+        <button id="confirmarBtn">Confirmar</button>
+        <button id="seguirComprandoBtn">Seguir Comprando</button>
+    </div>
+
+    <script src="detallesPedido.js"></script>
+</body>
+</html>

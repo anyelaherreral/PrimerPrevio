@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relación de Pedidos</title>
+    <link rel="stylesheet" href="styleRelacionPedidos.css">
+</head>
+<body>
+    <!-- Encabezado con logo, bienvenida y botones -->
+    <header>
+        <div class="logo">
+            <h1>Shop Online</h1>
+            <p>Anytime, Anywhere</p>
+        </div>
+        <div class="user-info">
+            <span id="welcomeMessage">Bienvenido: </span>
+            <div class="header-buttons">
+                <button id="cartBtn">Carrito</button>
+                <button id="logoutBtn">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tabla de relación de pedidos -->
+    <h2>Relación de Pedidos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Fecha Solicitud</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="ordersTableBody">
+            <!-- Aquí se llenarán los pedidos desde la API -->
+        </tbody>
+    </table>
+
+    <script src="relacionPedidos.js"></script>
+</body>
+</html>
